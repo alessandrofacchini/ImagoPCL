@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <Space
+        android:id="@+id/dummy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/mylogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:layout_toRightOf="@+id/dummy"
+        android:src="@drawable/logonavbarleft" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Some Name"
+        android:layout_toRightOf="@+id/dummy"
+        android:paddingLeft="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_width="fill_parent" />
+</RelativeLayout>

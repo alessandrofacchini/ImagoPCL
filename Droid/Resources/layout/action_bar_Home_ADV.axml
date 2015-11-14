@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myRelative"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ff6632">
+    <ImageView
+        android:id="@+id/myHomelogo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/logonavbarleft" />
+    <ImageView
+        android:id="@+id/myHomelogo2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ccf_logo" />
+</RelativeLayout>

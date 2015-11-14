@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="imago.imago" android:versionName="2.3" android:versionCode="12">
+	<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<!-- Notice that the package name of the application is a prefix on the permissions. -->
+	<uses-permission android:name="imago.imago.permission.MAPS_RECEIVE" />
+	<permission android:name="imago.imago.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+	<!-- Tell the system this app requires OpenGL ES 2.0. mettere a false per supporto da 4.4.4
+	http://stackoverflow.com/questions/25078037/my-android-application-is-showing-incompatible-for-android-4-4-4-moto-e-in-play
+	 -->
+	<uses-feature android:glEsVersion="0x00020000" android:required="false" />
+	<!-- rear facing cam -->
+	<uses-feature android:name="android.hardware.camera" android:required="false" />
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+	<!-- users location -->
+	<uses-feature android:name="android.hardware.location" android:required="true" />
+	<!-- accelerometer -->
+	<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+	<!-- compass -->
+	<uses-feature android:name="android.hardware.sensor.compass" android:required="false" />
+	<uses-feature android:name="android.hardware.telephony" android:required="false" />
+	<application android:icon="@drawable/icon" android:logo="@drawable/logonavbarleft" android:largeHeap="true" android:theme="@style/CustomActionBarTheme" android:label="Guida FVG">
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDLwcIAQQb8zH2Zr3ObMztbkB8D6bPNkHU" />
+		<!--- mappa x developer:  "AIzaSyC0sDy4xqOnT_6Sp0FTb8JtTJ3X5ZrnFDM"  x production: "AIzaSyDLwcIAQQb8zH2Zr3ObMztbkB8D6bPNkHU"   -->
+		<activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" />
+	</application>
+</manifest>
